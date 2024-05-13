@@ -169,7 +169,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-05-13 20:43:52 / 修改时间：20:45:14" itemprop="dateCreated datePublished" datetime="2024-05-13T20:43:52+08:00">2024-05-13</time>
+      <time title="创建时间：2024-05-13 20:43:52 / 修改时间：20:57:06" itemprop="dateCreated datePublished" datetime="2024-05-13T20:43:52+08:00">2024-05-13</time>
     </span>
 
   
@@ -184,14 +184,14 @@
     <div class="post-body" itemprop="articleBody">
           <span id="more"></span>
 
-<h1 id="第三章-插值和多项式逼近"><a href="#第三章-插值和多项式逼近" class="headerlink" title="第三章-插值和多项式逼近"></a>第三章-插值和多项式逼近</h1><h2 id="定理3-1（Weierstrass定理）"><a href="#定理3-1（Weierstrass定理）" class="headerlink" title="定理3.1（Weierstrass定理）"></a>定理3.1（Weierstrass定理）</h2><p>定理描述：假设 $f$ 在 $[a,b]$ 上有定义且连续，则对每一个 $\varepsilon &gt; 0$，存在一个多项式 $P(x)$ 使得对 $[a,b]$ 内的所有的 $x$ 均有 $|f(x) - P(x)| &lt; \varepsilon$.<br>定理解释：直观上来说，就是一段区间上的连续函数一定会有一个非常逼近它的多项式函数（因为没有限制多项式函数的次数）。<br>因此，多项式函数常用于<strong>一段区间</strong>上连续函数的逼近，而这一点泰勒多项式是做不到的，泰勒多项式适用于一个点附近的逼近。</p>
-<h2 id="一次拉格朗日插值多项式"><a href="#一次拉格朗日插值多项式" class="headerlink" title="一次拉格朗日插值多项式"></a>一次拉格朗日插值多项式</h2><p>令 $L_0(x)&#x3D;\frac{x-x_1}{x_0-x_1},\quad L_1(x)&#x3D;\frac{x-x_0}{x_1-x_0}$</p>
+<h1 id="第三章-插值和多项式逼近"><a href="#第三章-插值和多项式逼近" class="headerlink" title="第三章-插值和多项式逼近"></a>第三章-插值和多项式逼近</h1><h2 id="定理3-1（Weierstrass定理）"><a href="#定理3-1（Weierstrass定理）" class="headerlink" title="定理3.1（Weierstrass定理）"></a>定理3.1（Weierstrass定理）</h2><p>定理描述：假设 $$f$$ 在 $$[a,b]$$ 上有定义且连续，则对每一个 $$\varepsilon &gt; 0$$，存在一个多项式 $$P(x)$$ 使得对 $$[a,b]$$ 内的所有的 $$x$$ 均有 $$|f(x) - P(x)| &lt; \varepsilon$$.<br>定理解释：直观上来说，就是一段区间上的连续函数一定会有一个非常逼近它的多项式函数（因为没有限制多项式函数的次数）。<br>因此，多项式函数常用于<strong>一段区间</strong>上连续函数的逼近，而这一点泰勒多项式是做不到的，泰勒多项式适用于一个点附近的逼近。</p>
+<h2 id="一次拉格朗日插值多项式"><a href="#一次拉格朗日插值多项式" class="headerlink" title="一次拉格朗日插值多项式"></a>一次拉格朗日插值多项式</h2><p>令 $$L_0(x)&#x3D;\frac{x-x_1}{x_0-x_1},\quad L_1(x)&#x3D;\frac{x-x_0}{x_1-x_0}$$</p>
 <p><img src="/./image/1.png" alt="alt text"></p>
-<p>那么一次拉格朗日插值多项式 $P(x)&#x3D;L_0(x)y_0+L_1(x)y_1&#x3D;\frac{x-x_1}{x_0-x_1}y_0+\frac{x-x_0}{x_1-x_0}y_1.$</p>
-<h2 id="二次拉格朗日插值多项式"><a href="#二次拉格朗日插值多项式" class="headerlink" title="二次拉格朗日插值多项式"></a>二次拉格朗日插值多项式</h2><p>令 $L_{2,0}(x)&#x3D;\frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)},L_{2,1}(x)&#x3D;\frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}, L_{2,2}(x)&#x3D;\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}.$</p>
+<p>那么一次拉格朗日插值多项式 $$P(x)&#x3D;L_0(x)y_0+L_1(x)y_1&#x3D;\frac{x-x_1}{x_0-x_1}y_0+\frac{x-x_0}{x_1-x_0}y_1.$$</p>
+<h2 id="二次拉格朗日插值多项式"><a href="#二次拉格朗日插值多项式" class="headerlink" title="二次拉格朗日插值多项式"></a>二次拉格朗日插值多项式</h2><p>令 $$L_{2,0}(x)&#x3D;\frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)},L_{2,1}(x)&#x3D;\frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}, L_{2,2}(x)&#x3D;\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}.$$</p>
 <p><img src="/./image/2.png" alt="alt text"></p>
 <p>那么二次拉格朗日插值多项式:</p>
-<p>$P(x) &#x3D; L_{2,0}(x)y_0+L_{2,1}(x)y_1+L_{2,2}(x)y_2\&#x3D;\frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)}y_0+\frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}y_1 +\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}y_2$</p>
+<p>$$P(x) &#x3D; L_{2,0}(x)y_0+L_{2,1}(x)y_1+L_{2,2}(x)y_2\&#x3D;\frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)}y_0+\frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}y_1 +\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}y_2$$</p>
 
       
     </div>
