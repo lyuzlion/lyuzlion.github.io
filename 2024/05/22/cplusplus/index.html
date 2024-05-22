@@ -19,13 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"lyuzlion.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="article">
-<meta property="og:title" content="cplusplus">
+    <meta name="description" content="qwq">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些C++特性">
 <meta property="og:url" content="http://lyuzlion.github.io/2024/05/22/cplusplus/index.html">
 <meta property="og:site_name" content="lyuzlion">
+<meta property="og:description" content="qwq">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-05-22T14:45:02.000Z">
-<meta property="article:modified_time" content="2024-05-22T14:45:03.014Z">
+<meta property="article:modified_time" content="2024-05-22T15:22:22.860Z">
 <meta property="article:author" content="Aaron Liu">
 <meta name="twitter:card" content="summary">
 
@@ -34,10 +36,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://lyuzlion.github.io/2024/05/22/cplusplus/","path":"2024/05/22/cplusplus/","title":"cplusplus"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://lyuzlion.github.io/2024/05/22/cplusplus/","path":"2024/05/22/cplusplus/","title":"一些C++特性"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>cplusplus | lyuzlion</title>
+<title>一些C++特性 | lyuzlion</title>
   
 
 
@@ -89,7 +91,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -102,6 +104,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88"><span class="nav-number">1.</span> <span class="nav-text">智能指针</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#std-unique-ptr"><span class="nav-number">1.1.</span> <span class="nav-text">std::unique_ptr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#std-shared-ptr"><span class="nav-number">1.2.</span> <span class="nav-text">std::shared_ptr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#std-weak-ptr"><span class="nav-number">1.3.</span> <span class="nav-text">std::weak_ptr</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -155,12 +158,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="cplusplus | lyuzlion">
+      <meta itemprop="name" content="一些C++特性 | lyuzlion">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          cplusplus
+          一些C++特性
         </h1>
 
         <div class="post-meta-container">
@@ -172,7 +175,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-05-22 22:45:02 / 修改时间：22:45:03" itemprop="dateCreated datePublished" datetime="2024-05-22T22:45:02+08:00">2024-05-22</time>
+      <time title="创建时间：2024-05-22 22:45:02 / 修改时间：23:22:22" itemprop="dateCreated datePublished" datetime="2024-05-22T22:45:02+08:00">2024-05-22</time>
     </span>
 
   
@@ -184,7 +187,19 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody"><p>qwq<br><span id="more"></span></p>
+<h1 id="智能指针"><a href="#智能指针" class="headerlink" title="智能指针"></a>智能指针</h1><p>C++11 引入了 3 个智能指针类型</p>
+<h2 id="std-unique-ptr"><a href="#std-unique-ptr" class="headerlink" title="std::unique_ptr"></a>std::unique_ptr</h2><p>独占资源所有权的指针。<br>离开 unique_ptr 对象的作用域时，会自动释放资源。</p>
+<p>例：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span>* p = <span class="keyword">new</span> <span class="built_in">int</span>(<span class="number">100</span>);</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="keyword">delete</span> p;  <span class="comment">// 需要手动释放内存</span></span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">&#123;</span><br><span class="line">    std::unique_ptr&lt;<span class="type">int</span>&gt; uptr = std::<span class="built_in">make_unique</span>&lt;<span class="type">int</span>&gt;(<span class="number">200</span>); <span class="comment">// 初始化值为200</span></span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="comment">// 离开 uptr 的作用域的时候自动释放内存</span></span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">&#123;</span><br><span class="line">    std::unique_ptr&lt;<span class="type">int</span>&gt; uptr = std::<span class="built_in">make_unique</span>&lt;<span class="type">int</span>&gt;(<span class="number">200</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    std::unique_ptr&lt;int&gt; uptr1 = uptr;  </span></span><br><span class="line"><span class="comment">    // 编译错误，std::unique_ptr&lt;T&gt; 是 move-only 的，即不支持拷贝和赋值</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"></span><br><span class="line">    std::unique_ptr&lt;<span class="type">int</span>&gt; uptr2 = std::<span class="built_in">move</span>(uptr);</span><br><span class="line">    <span class="built_in">assert</span>(uptr == <span class="literal">nullptr</span>);</span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">&#123;</span><br><span class="line">    std::unique_ptr&lt;<span class="type">int</span>[]&gt; uptr = std::<span class="built_in">make_unique</span>&lt;<span class="type">int</span>[]&gt;(<span class="number">10</span>); <span class="comment">// 指向数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        uptr[i] = i * i;</span><br><span class="line">    &#125;   </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        std::cout &lt;&lt; uptr[i] &lt;&lt; std::endl;</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">FileCloser</span> &#123;</span><br><span class="line">        <span class="function"><span class="type">void</span> <span class="title">operator</span><span class="params">()</span><span class="params">(FILE* fp)</span> <span class="type">const</span> </span>&#123; <span class="comment">// 自定义deleter</span></span><br><span class="line">            <span class="keyword">if</span> (fp != <span class="literal">nullptr</span>) </span><br><span class="line">                <span class="built_in">fclose</span>(fp);</span><br><span class="line">        &#125;   </span><br><span class="line">    &#125;;  </span><br><span class="line">    <span class="function">std::unique_ptr&lt;FILE, FileCloser&gt; <span class="title">uptr</span><span class="params">(fopen(<span class="string">&quot;test_file.txt&quot;</span>, <span class="string">&quot;w&quot;</span>))</span></span>;</span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">&#123;</span><br><span class="line">    std::unique_ptr&lt;FILE, std::function&lt;<span class="type">void</span>(FILE*)&gt;&gt; <span class="built_in">uptr</span>(<span class="built_in">fopen</span>(<span class="string">&quot;test_file.txt&quot;</span>, <span class="string">&quot;w&quot;</span>), [](FILE* fp) &#123; <span class="comment">// 使用lambda自定义deleter</span></span><br><span class="line">            <span class="built_in">fclose</span>(fp);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="std-shared-ptr"><a href="#std-shared-ptr" class="headerlink" title="std::shared_ptr"></a>std::shared_ptr</h2><p>共享资源所有权的指针。<code>std::shared_ptr</code>其实就是对<strong>资源</strong>做<strong>引用计数</strong>——当引用计数为 0 的时候，自动释放资源。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    std::shared_ptr&lt;<span class="type">int</span>&gt; sptr = std::<span class="built_in">make_shared</span>&lt;<span class="type">int</span>&gt;(<span class="number">200</span>);</span><br><span class="line">    <span class="built_in">assert</span>(sptr.<span class="built_in">use_count</span>() == <span class="number">1</span>);  <span class="comment">// 此时引用计数为 1</span></span><br><span class="line">    &#123;   </span><br><span class="line">        std::shared_ptr&lt;<span class="type">int</span>&gt; sptr1 = sptr;</span><br><span class="line">        <span class="built_in">assert</span>(sptr.<span class="built_in">get</span>() == sptr1.<span class="built_in">get</span>());  <span class="comment">// .get()返回资源地址</span></span><br><span class="line">        <span class="built_in">assert</span>(sptr.<span class="built_in">use_count</span>() == <span class="number">2</span>);   <span class="comment">// sptr 和 sptr1 共享资源，这个资源的引用计数为 2</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">assert</span>(sptr.<span class="built_in">use_count</span>() == <span class="number">1</span>);   <span class="comment">// sptr1 已经释放</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// use_count 为 0 时自动释放内存</span></span><br><span class="line">&#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">int</span>*) &lt;&lt; std::endl;  <span class="comment">// 输出 8</span></span><br><span class="line">    std::cout &lt;&lt; <span class="built_in">sizeof</span>(std::unique_ptr&lt;<span class="type">int</span>&gt;) &lt;&lt; std::endl;  <span class="comment">// 输出 8</span></span><br><span class="line">    std::cout &lt;&lt; <span class="built_in">sizeof</span>(std::unique_ptr&lt;FILE, std::function&lt;<span class="built_in">void</span>(FILE*)&gt;&gt;) &lt;&lt; std::endl;  <span class="comment">// 输出 40</span></span><br><span class="line">    std::cout &lt;&lt; <span class="built_in">sizeof</span>(std::shared_ptr&lt;<span class="type">int</span>&gt;) &lt;&lt; std::endl;  <span class="comment">// 输出 16</span></span><br><span class="line">    <span class="function">std::shared_ptr&lt;FILE&gt; <span class="title">sptr</span><span class="params">(fopen(<span class="string">&quot;test_file.txt&quot;</span>, <span class="string">&quot;w&quot;</span>), [](FILE* fp) &#123;</span></span></span><br><span class="line"><span class="params"><span class="function">        std::cout &lt;&lt; <span class="string">&quot;close &quot;</span> &lt;&lt; fp &lt;&lt; std::endl;</span></span></span><br><span class="line"><span class="params"><span class="function">        fclose(fp);</span></span></span><br><span class="line"><span class="params"><span class="function">    &#125;)</span></span>; </span><br><span class="line">    std::cout &lt;&lt; <span class="built_in">sizeof</span>(sptr) &lt;&lt; std::endl;  <span class="comment">// 输出 16</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="std-weak-ptr"><a href="#std-weak-ptr" class="headerlink" title="std::weak_ptr"></a>std::weak_ptr</h2><p><code>std::weak_ptr</code>要与<code>std::shared_ptr</code>一起使用。 一个<code>std::weak_ptr</code>对象看做是 <code>std::shared_ptr</code>对象管理的资源的观察者，它不影响共享资源的生命周期：</p>
+<ol>
+<li>如果需要使用<code>weak_ptr</code>正在观察的资源，可以将<code>weak_ptr</code>提升为<code>shared_ptr</code>。</li>
+<li>当<code>shared_ptr</code>管理的资源被释放时，<code>weak_ptr</code>会自动变成<code>nullptr</code>。</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Observe</span><span class="params">(std::weak_ptr&lt;<span class="type">int</span>&gt; wptr)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">auto</span> sptr = wptr.<span class="built_in">lock</span>()) &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;value: &quot;</span> &lt;&lt; *sptr &lt;&lt; std::endl;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;wptr lock fail&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">std::weak_ptr&lt;<span class="type">int</span>&gt; wptr;</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">auto</span> sptr = std::<span class="built_in">make_shared</span>&lt;<span class="type">int</span>&gt;(<span class="number">111</span>);</span><br><span class="line">    wptr = sptr;</span><br><span class="line">    <span class="built_in">Observe</span>(wptr);  <span class="comment">// sptr 指向的资源没被释放，wptr 可以成功提升为 shared_ptr，输出value: 111</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">Observe</span>(wptr);  <span class="comment">// sptr 指向的资源已被释放，wptr 无法提升为 shared_ptr，输出wptr lock fail</span></span><br></pre></td></tr></table></figure>
+
     </div>
 
     
