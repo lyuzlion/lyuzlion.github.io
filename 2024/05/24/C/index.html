@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lyuzlion.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="QAQ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言随笔">
+<meta property="og:url" content="http://lyuzlion.github.io/2024/05/24/C/index.html">
+<meta property="og:site_name" content="lyuzlion">
+<meta property="og:description" content="QAQ">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://lyuzlion.github.io/2024/05/24/C/image.png">
+<meta property="og:image" content="http://lyuzlion.github.io/2024/05/24/C/2.png">
+<meta property="og:image" content="http://lyuzlion.github.io/2024/05/24/C/3.png">
+<meta property="og:image" content="http://lyuzlion.github.io/2024/05/24/C/4.png">
+<meta property="og:image" content="http://lyuzlion.github.io/2024/05/24/C/5.png">
+<meta property="article:published_time" content="2024-05-24T13:11:19.000Z">
+<meta property="article:modified_time" content="2024-05-24T15:24:11.747Z">
+<meta property="article:author" content="Aaron Liu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lyuzlion.github.io/2024/05/24/C/image.png">
+
+
+<link rel="canonical" href="http://lyuzlion.github.io/2024/05/24/C/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://lyuzlion.github.io/2024/05/24/C/","path":"2024/05/24/C/","title":"C语言随笔"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>C语言随笔 | lyuzlion</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">lyuzlion</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">地址空间划分</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">系统调用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#fork"><span class="nav-number">2.1.</span> <span class="nav-text">fork()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#exec"><span class="nav-number">2.2.</span> <span class="nav-text">exec()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#wait"><span class="nav-number">2.3.</span> <span class="nav-text">wait()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#waitpid"><span class="nav-number">2.4.</span> <span class="nav-text">waitpid()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#open"><span class="nav-number">2.5.</span> <span class="nav-text">open()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#read"><span class="nav-number">2.6.</span> <span class="nav-text">read()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#write"><span class="nav-number">2.7.</span> <span class="nav-text">write()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#close"><span class="nav-number">2.8.</span> <span class="nav-text">close()</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Aaron Liu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://lyuzlion.github.io/2024/05/24/C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Aaron Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lyuzlion">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="C语言随笔 | lyuzlion">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          C语言随笔
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-05-24 21:11:19 / 修改时间：23:24:11" itemprop="dateCreated datePublished" datetime="2024-05-24T21:11:19+08:00">2024-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>QAQ<br><span id="more"></span></p>
+<h1 id="地址空间划分"><a href="#地址空间划分" class="headerlink" title="地址空间划分"></a>地址空间划分</h1><p>系统运行程序时，为其所分配的内存一般包括如下几个部分：</p>
+<ol>
+<li>代码区（存放代码段，里面是一些二进制机器指令）</li>
+<li>常量区（const、字符串常量）</li>
+<li>全局数据区（全局变量、static）</li>
+<li>堆区（malloc）</li>
+<li>栈区（局部变量、函数参数）</li>
+<li>命令行参数区（存主函数main的参数）</li>
+</ol>
+<p>注意：寄存器的值不保存在地址空间中。保存在PCB中。</p>
+<p><img src="/2024/05/24/C/image.png" alt="alt text"></p>
+<p>全局数据区再分为</p>
+<ol>
+<li>已初始化的数据区</li>
+<li>未初始化的数据区（BSS，Block Started by Symbol，是指存放程序中未初始化的全局变量和静态变量的一块内存区域。特点是:可读写的，在程序执行之前BSS段会自动清0）</li>
+</ol>
+<p>x86中的堆、栈:</p>
+<ol>
+<li>堆：向上生长；(低地址<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewbox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"/></g></g></g></svg></mjx-container>高地址)</li>
+<li>栈：向下生长；(高地址<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewbox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"/></g></g></g></svg></mjx-container>低地址)</li>
+</ol>
+<p>逻辑空间：</p>
+<p><img src="/2024/05/24/C/2.png" alt="alt text"></p>
+<ol>
+<li>代码段或文本段(code，.text)：存放可执行指令</li>
+<li>数据段(data)：存放程序的<strong>全局变量</strong>与<strong>静态局部变量</strong><ol>
+<li>.rodata(只读数据段)：字符串常量、全局const变量等常量，程序运行时不可修改</li>
+<li>.rwdata(读写数据段)：程序运行时可以修改全局变量</li>
+<li>.zidata/.bss(零初始化数据段)：未初始化/初始化为0的全局变量</li>
+</ol>
+</li>
+<li>堆(.heap)：运行时动态分配的内存（malloc，calloc，realloc）</li>
+<li>栈(.stack)：包含临时数据，如局部变量、函数参数、返回地址</li>
+</ol>
+<p>栈底一般是main函数的入口，在将.bss段初始化0等初始化工作后，开始执行main函数</p>
+<h1 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h1><h2 id="fork"><a href="#fork" class="headerlink" title="fork()"></a>fork()</h2><h2 id="exec"><a href="#exec" class="headerlink" title="exec()"></a>exec()</h2><h2 id="wait"><a href="#wait" class="headerlink" title="wait()"></a>wait()</h2><h2 id="waitpid"><a href="#waitpid" class="headerlink" title="waitpid()"></a>waitpid()</h2><h2 id="open"><a href="#open" class="headerlink" title="open()"></a>open()</h2><p>头文件：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/types.h&gt;</span>    </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/stat.h&gt;</span>    </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;fcntl.h&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>函数原型：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">open</span><span class="params">(<span class="type">const</span> <span class="type">char</span> * pathname, <span class="type">int</span> flags)</span>;</span><br></pre></td></tr></table></figure></p>
+<p>flags:</p>
+<ol>
+<li><code>O_RDONLY</code> 只读</li>
+<li><code>O_WRONLY</code> 只写</li>
+<li><code>O_RDWR</code>   可读写</li>
+<li><code>O_CREAT</code>  若欲打开的文件不存在则自动建立该文件，与上面三个组合使用，例如<code>O_CREAT|O_RDWR</code></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span>  </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;unistd.h&gt;</span>  </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;fcntl.h&gt;</span>  </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/types.h&gt;</span>  </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/stat.h&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> {   </span><br><span class="line">	<span class="type">int</span> fd = open(<span class="string">"data.out"</span>, O_RDONLY);  </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,fd); <span class="comment">//输出3，因为stdin,stdout,stderr已被依次打开</span></span><br><span class="line">    <span class="keyword">if</span> (fd == <span class="number">-1</span>) <span class="comment">// 打开文件失败,则异常返回  </span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;   </span><br><span class="line">    close(in);  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">}   </span><br></pre></td></tr></table></figure>
+<p>进程A第一次打开文件x，会在文件表中创建一个引用数为1的引用，再次打开文件x，再创建一个新的引用（而不是原有引用数加一）</p>
+<p>关于父子进程打开文件的问题，如果先创建子进程，父子进程再打开相同的文件，那么文件表里的引用其实是相互独立的；但是如果父进程先打开文件再创建子进程，子进程继承父进程的资源，会导致原先的引用数变成2。</p>
+<p>两个独立进程打开文件：<br><img src="/2024/05/24/C/3.png" alt="alt text"></p>
+<p>fork之后父子进程各自打开文件————导致相互覆盖：<br><img src="/2024/05/24/C/4.png" alt="alt text"></p>
+<p>父进程先打开文件再fork————导致交替读写：<br><img src="/2024/05/24/C/5.png" alt="alt text"></p>
+<h2 id="read"><a href="#read" class="headerlink" title="read()"></a>read()</h2><p>头文件：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;unistd.h&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>函数原型：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">ssize_t</span> <span class="title function_">read</span><span class="params">(<span class="type">int</span> fd, <span class="type">void</span> * buf, <span class="type">size_t</span> count)</span>;</span><br></pre></td></tr></table></figure><br>返回值：</p>
+<ol>
+<li>如果成功，返回读取的字节数；</li>
+<li>如果出错，返回-1并设置errno；</li>
+<li>如果在调read函数之前已是文件末尾，则返回0</li>
+<li>函数的参数【int fd】： 这个是文件指针（准确来说，是文件描述符）</li>
+<li>函数的参数【void *buf】： 读上来的数据保存在缓冲区buf中，同时文件的当前读写位置向后移</li>
+<li>函数的参数【size_t count】： 是请求读取的<strong>字节</strong>数。若参数count 为0, 则read()不会有作用并返回0. 返回值为实际读取到的字节数, 如果返回0</li>
+</ol>
+<h2 id="write"><a href="#write" class="headerlink" title="write()"></a>write()</h2><p>函数原型：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">ssize_t</span> <span class="title function_">write</span> <span class="params">(<span class="type">int</span> fd, <span class="type">const</span> <span class="type">void</span> * buf, <span class="type">size_t</span> count)</span>;</span><br></pre></td></tr></table></figure></p>
+<p>返回值：</p>
+<ol>
+<li>如果顺利write()会返回实际写入的字节数.</li>
+<li>当有错误发生时则返回-1, 错误代码存入errno 中.</li>
+</ol>
+<h2 id="close"><a href="#close" class="headerlink" title="close()"></a>close()</h2>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/05/24/DS/" rel="prev" title="Data Structure">
+                  <i class="fa fa-angle-left"></i> Data Structure
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Aaron Liu</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"mhchem":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+<script type="text/javascript" src="/js/love.js"></script>
+<script type="text/javascript"
+color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
