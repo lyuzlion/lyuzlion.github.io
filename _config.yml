@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Zilong Liu"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "My name is Zilong Liu(刘子龙), a student pursuing a B.E. degree in Computer Science Department of Taishan College, Shandong University."
+  location         : "Qingdao, Shandong"
+  employer         : "Shandong University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "zilongliusdu@163.com" 
 
   # Academic websites
   academia         : # URL
