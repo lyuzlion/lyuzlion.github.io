@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Zilong Liu"
   pronouns         : # example: "she/her"  
-  bio              : "My name is Zilong Liu(刘子龙), a student pursuing a B.E. degree in Computer Science Department of Taishan College, Shandong University."
-  location         : "Qingdao, Shandong"
-  employer         : "Shandong University"
+  bio              : "Taishan College, Shandong University"
+  location         : "Qingdao, China"
+  # employer         : "Shandong University"
   uri              : # URL
   email            : "zilongliusdu@163.com" 
 
