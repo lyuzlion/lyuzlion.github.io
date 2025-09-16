@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Zilong Liu（刘子龙）, a student pursuing a B.E. degree in Computer Science Department of Taishan College, Shandong University.
+My name is Zilong Liu (刘子龙), a student pursuing a B.E. degree in Computer Science Department of Taishan College, Shandong University.
 
 A data-driven personal website
 ======
