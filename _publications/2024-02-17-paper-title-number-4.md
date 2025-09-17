@@ -1,11 +1,11 @@
 ---
-title: "With Anchors or Not: Fairness-aware Truss-based Community Search on Attributed Graphs"
+title: "With Anchors or Not: Fairness-aware Truss-based Community Search on Attributed Graphs."
 collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
+date: 2025-03-26
+venue: 'ICDE'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
 ---
