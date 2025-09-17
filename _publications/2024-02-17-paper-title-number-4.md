@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 4"
+title: "With Anchors or Not: Fairness-aware Truss-based Community Search on Attributed Graphs"
 collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-4
