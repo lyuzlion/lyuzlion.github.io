@@ -9,56 +9,24 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
+- 2022 ~ 2026, Taishan College, Shandong Universiy.
+- 2026 ~ 2031 (expected), Gaoling School of Artificial Intelligence, Renmin University of China.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Competition
+    - The 2023 ACM ICPC Asia Regional Contest, Bronze Medal, Nanjing
+    - The 2023 ACM ICPC Asia Regional Contest, Bronze Medal, Jinan
+    - The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Bronze Medal, Xi'an
+    - The 2023 ACM ICPC China Shandong Provincial Programming Contest, Silver Medal, Jinan
+    - 14th National Mathematics Competition for College Students (Non-Mathematics Major), First Prize
+    - 15th National Mathematics Competition for College Students (Non-Mathematics Major, Category A), First Prize
+    - 12th Shandong Provincial Mathematics Competition for College Students, First Prize
+    - NOIP2020, First Prize
+    - WC2021, Bronze Medal
+---
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Publication 
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- "With Anchors or Not: Fairness-aware Trusts-based Community Search on Attributed Graphs." accepted by ICDE'25 (CCF-A, First Student Author).
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+---
