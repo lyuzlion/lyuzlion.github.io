@@ -13,6 +13,9 @@ redirect_from:
 - 2022 ~ 2026, Taishan College, Shandong Universiy.
 - 2026 ~ 2031 (expected), Gaoling School of Artificial Intelligence, Renmin University of China.
 
+## 🔭 Research Interests
+Graph Algorithm, Community Search
+
 ## 🏆 Competitions & Awards
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, **Bronze Medal**
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, **Bronze Medal**
