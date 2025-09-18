@@ -18,8 +18,8 @@ redirect_from:
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, **Bronze Medal**
 - 🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, **Bronze Medal**
 - 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, **Silver Medal**
-- 🥇 The 14th Chinese Mathematics Competition for College Students (Non-Mathematics Major), **First Prize**
-- 🥇 The 15th Chinese Mathematics Competition for College Students (Non-Mathematics Major, Category A), **First Prize**
+- 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
+- 🥇 The 15th Chinese Mathematics Competition for College Students, **First Prize**
 - 🥇 The 13th Shandong Provincial Mathematics Competition for College Students, **First Prize**
 - 🥉 WC2021, **Bronze Medal**
 - 🥇 NOIP2020, **First Prize**
