@@ -29,5 +29,5 @@ Graph Algorithm, Community Search
 
 ## 📝 Publication 
 
-- `ICDE'25` 🎊 "With Anchors or Not: Fairness-aware Trusts-based Community Search on Attributed Graphs." (**CCF-A, First Student Author**).
+- `ICDE'25` 🎊 "With Anchors or Not: Fairness-aware Truss-based Community Search on Attributed Graphs." (**CCF-A, First Student Author**).
 
