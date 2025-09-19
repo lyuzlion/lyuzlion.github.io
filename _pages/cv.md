@@ -10,8 +10,8 @@ redirect_from:
 {% include base_path %}
 
 ## 📖 Education
-- 2022 ~ 2026, Taishan College, Shandong Universiy.
-- 2026 ~ 2031 (expected), Gaoling School of Artificial Intelligence, Renmin University of China.
+- Ph.D. (Expected), Gaoling School of Artificial Intelligence, Renmin University of China, 2026 – 2031
+- B.E., Taishan College, Shandong University, 2022 – 2026
 
 ## 🔭 Research Interests
 Graph Algorithm, Community Search
