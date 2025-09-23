@@ -27,27 +27,30 @@ My research interest includes graph algorithms and community search.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2025</div><img src='images/icde25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+[With Anchors or Not: Fairness-aware Truss-based Community Search on Attributed Graphs](https://ieeexplore.ieee.org/document/11113156)
+ Xinrui Wang, **Zilong Liu**, Shixin Ye, Xin Huang, Hong Gao, Xiuzhen Cheng, Dongxiao Yu
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- We use the k-truss model, which is a relaxation of the clique but whose members have large engagement and high tie strength, to describe fair communities, namely fair k-truss communities (FTC) and anchored fair k-truss communities (AFTC, using anchored vertices to help satisfying the fairness constraint). We formulate the FTC and AFTC search problems to find the FTC or AFTC containing a given query vertex q which has the largest k and the smallest diameter. We prove the hardness of both problems. We develop several greedy algorithms and acceleration strategies to solve FTC and AFTC search problems. 
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, **Bronze Medal**
+- 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, **Bronze Medal**
+- 🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, **Bronze Medal**
+- 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, **Silver Medal**
+- 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
+- 🥇 The 15th Chinese Mathematics Competition for College Students, **First Prize**
+- 🥇 The 13th Shandong Provincial Mathematics Competition for College Students, **First Prize**
+- 🥉 WC2021, **Bronze Medal**
+- 🥇 NOIP2020, **First Prize**
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- **Ph.D.** (Expected), Gaoling School of Artificial Intelligence, Renmin University of China, 2026 – 2031
+- **B.E.**, Taishan College, Shandong University, 2022 – 2026
 
 <!--# 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
