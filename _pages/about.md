@@ -29,11 +29,11 @@ My research interest includes graph algorithms and community search.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2025</div><img src='images/icde25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[With Anchors or Not: Fairness-aware Truss-based Community Search on Attributed Graphs](https://ieeexplore.ieee.org/document/11113156)
+[With Anchors or Not: Fairness-aware Truss-based Community Search on Attributed Graphs](https://ieeexplore.ieee.org/document/11113156) **(CCF-A, First Student Author)**
   
  Xinrui Wang, **Zilong Liu**, Shixin Ye, Xin Huang, Hong Gao, Xiuzhen Cheng, Dongxiao Yu
 
-- We use the k-truss model, which is a relaxation of the clique but whose members have large engagement and high tie strength, to describe fair communities, namely fair k-truss communities (FTC) and anchored fair k-truss communities (AFTC, using anchored vertices to help satisfying the fairness constraint). We formulate the FTC and AFTC search problems to find the FTC or AFTC containing a given query vertex q which has the largest k and the smallest diameter.
+- We use the k-truss model, which is a relaxation of the clique but whose members have large engagement and high tie strength, to describe fair communities, namely fair k-truss communities (FTC) and anchored fair k-truss communities (AFTC, using anchored vertices to help satisfying the fairness constraint). 
 </div>
 </div>
 
