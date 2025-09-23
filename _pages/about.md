@@ -33,7 +33,7 @@ My research interest includes graph algorithms and community search.
   
  Xinrui Wang, **Zilong Liu**, Shixin Ye, Xin Huang, Hong Gao, Xiuzhen Cheng, Dongxiao Yu
 
-- We use the k-truss model, which is a relaxation of the clique but whose members have large engagement and high tie strength, to describe fair communities, namely fair k-truss communities (FTC) and anchored fair k-truss communities (AFTC, using anchored vertices to help satisfying the fairness constraint). 
+- We use the k-truss model, which is a relaxation of the clique but whose members have large engagement and high tie strength, to describe fair communities, namely fair k-truss communities and anchored fair k-truss communities. 
 </div>
 </div>
 
