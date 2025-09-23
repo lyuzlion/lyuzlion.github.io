@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zilong Liu"
-description              : "Zilong Liu's academic portfolio "
+description              : "Undergraduate student at Taishan College, Shandong University"
 repository               : "lyuzlion/lyuzlion.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,9 +23,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zilong Liu"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Undergraduate student at Taishan College, Shandong University"
+  bio              : "Shandong University"
   location         : "Qingdao, China"
-  employer         : "Shandong University"
+  employer         : # "Shandong University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=pViaBJYAAAAJ"
   email            : "zilongliusdu@163.com"
