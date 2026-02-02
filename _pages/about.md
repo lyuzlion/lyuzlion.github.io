@@ -23,6 +23,7 @@ My research interest includes graph algorithms and community search.
 
 
 # 🔥 News
+- *2026.02*: 🎉🎉 Won a bronze medal at the ICPC Asia East Continent Final Contest!
 - *2025.11*: 🎉🎉 Won a gold medal at the ICPC Asia Shenyang Regional Contest!😄
 - *2025.11*: 🎉🎉 Won a silver medal at the ICPC Asia Nanjing Regional Contest!
 - *2025.03*: 🎉🎉 A paper has been accepted to ICDE 2025!
@@ -41,7 +42,8 @@ My research interest includes graph algorithms and community search.
 
 
 # 🏆 Honors and Awards
-- 🥇 The 2025 ACM ICPC Asia Regional Contest, Shenyang, **Gold Medal** 
+- 🥇 The 2025 ACM ICPC Asia Regional Contest, Shenyang, **Gold Medal**
+- 🥉 The 50th ICPC Asia East Continent Final Contest, **Bronze Medal**
 - 🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, **Silver Medal**
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, **Bronze Medal**
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, **Bronze Medal**
