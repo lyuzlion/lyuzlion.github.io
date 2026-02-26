@@ -47,7 +47,7 @@ My research interest includes graph algorithms and community search.
 - 🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, **Silver Medal**
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, **Bronze Medal**
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, **Bronze Medal**
-- 山东大学优秀毕业生
+- 🎉 山东大学优秀毕业生
 - 🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, **Bronze Medal**
 - 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, **Silver Medal**
 - 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
