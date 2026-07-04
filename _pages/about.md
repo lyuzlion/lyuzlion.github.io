@@ -41,20 +41,22 @@ My research interest includes **Mechanism Design** and **Computational Advertisi
 
 
 # 🏆 Honors and Awards
-- 🥇 The 2025 ACM ICPC Asia Regional Contest, Shenyang, **Gold Medal**
-- 🥇 The 2026 China Collegiate Programming Contest National Invitational, Qinhuangdao, **Gold Medal**
-- 🥉 The 50th ICPC Asia East Continent Final Contest (EC-Final), **Bronze Medal**
-- 🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, **Silver Medal**
-- 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, **Bronze Medal**
-- 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, **Bronze Medal**
-- 🎉 山东大学优秀毕业生、山东大学荣誉学士、泰山学堂荣誉学院
-- 🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, **Bronze Medal**
-- 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, **Silver Medal**
-- 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
-- 🥇 The 15th Chinese Mathematics Competition for College Students, **First Prize**
-- 🥇 The 13th Shandong Provincial Mathematics Competition for College Students, **First Prize**
-- 🥉 NOI2021冬令营, **Bronze Medal**
-- 🥇 NOIP2020, **First Prize**
+<ul>
+  <li>🥇 The 2025 ACM ICPC Asia Regional Contest, Shenyang, <span style="font-weight:bold; color:#DAA520;">Gold Medal</span></li>
+  <li>🥇 The 2026 China Collegiate Programming Contest National Invitational, Qinhuangdao, <span style="font-weight:bold; color:#DAA520;">Gold Medal</span></li>
+  <li>🥉 The 50th ICPC Asia East Continent Final Contest (EC-Final), <span style="font-weight:bold; color:#CD7F32;">Bronze Medal</span></li>
+  <li>🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, <span style="font-weight:bold; color:#C0C0C0;">Silver Medal</span></li>
+  <li>🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, <span style="font-weight:bold; color:#CD7F32;">Bronze Medal</span></li>
+  <li>🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, <span style="font-weight:bold; color:#CD7F32;">Bronze Medal</span></li>
+  <li>🎉 山东大学优秀毕业生、山东大学荣誉学士、泰山学堂荣誉学院</li>
+  <li>🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, <span style="font-weight:bold; color:#CD7F32;">Bronze Medal</span></li>
+  <li>🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, <span style="font-weight:bold; color:#C0C0C0;">Silver Medal</span></li>
+  <li>🥇 The 14th Chinese Mathematics Competition for College Students, <span style="font-weight:bold; color:#DAA520;">First Prize</span>（这里您写的是 First Prize，不是 Medal，但我按同样逻辑处理，也加粗着色为金色）</li>
+  <li>🥇 The 15th Chinese Mathematics Competition for College Students, <span style="font-weight:bold; color:#DAA520;">First Prize</span></li>
+  <li>🥇 The 13th Shandong Provincial Mathematics Competition for College Students, <span style="font-weight:bold; color:#DAA520;">First Prize</span></li>
+  <li>🥉 NOI2021冬令营, <span style="font-weight:bold; color:#CD7F32;">Bronze Medal</span></li>
+  <li>🥇 NOIP2020, <span style="font-weight:bold; color:#DAA520;">First Prize</span></li>
+</ul>
 
 
 
