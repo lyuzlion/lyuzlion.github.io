@@ -53,7 +53,7 @@ My research interest includes **Mechanism Design** and **Computational Advertisi
 - 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
 - 🥇 The 15th Chinese Mathematics Competition for College Students, **First Prize**
 - 🥇 The 13th Shandong Provincial Mathematics Competition for College Students, **First Prize**
-- 🥉 WC2021, **Bronze Medal**
+- 🥉 NOI2021冬令营, **Bronze Medal**
 - 🥇 NOIP2020, **First Prize**
 
 
