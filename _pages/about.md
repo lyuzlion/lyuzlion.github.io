@@ -28,7 +28,7 @@ My research interest includes **Mechanism Design** and **Computational Advertisi
 - **B.E.**, Taishan College, Shandong University, 2022 – 2026
 
 # 💻 Internships
-- *2026.03 - 2026.07*, [Baidu](https://github.com/), China.
+- *2026.03 - 2026.07*, [Baidu](https://home.baidu.com/), China.
 
 # 📝 Publications 
 
