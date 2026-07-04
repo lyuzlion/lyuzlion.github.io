@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zilong Liu"
   avatar           : "images/img.jpg"
-  bio              : "Shandong University"
-  location         : "Qingdao, China"
+  bio              : "Renmin University of China"
+  location         : "Beijing, China"
   employer         : # "Shandong University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=pViaBJYAAAAJ"
