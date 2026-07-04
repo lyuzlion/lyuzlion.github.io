@@ -19,7 +19,7 @@ redirect_from:
 
 I am a PhD candidate at Gaoling School of Artificial Intelligence, Renmin University of China, supervised by Prof. [Qi Qi](http://ai.ruc.edu.cn/academicfaculty/szdwn/qq/index.htm).
 
-I earned my B.E. degree in at Computer Science Department of Taishan College (泰山学堂), Shandong University, supervised by Prof. [Xinrui Wang](https://xrsdu.github.io/xrwang.github.io/).
+I earned my B.E. degree in at Computer Science Department of Taishan College, Shandong University, supervised by Prof. [Xinrui Wang](https://xrsdu.github.io/xrwang.github.io/).
 
 My research interest includes **Mechanism Design** and **Computational Advertising**. 
 
