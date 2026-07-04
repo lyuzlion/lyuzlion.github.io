@@ -17,16 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Zilong Liu (刘子龙). I'm an undergraduate student at Computer Science Department of Taishan College, Shandong University, supervised by Prof. [Xinrui Wang](https://xrsdu.github.io/xrwang.github.io/).
+I earned my B.E. degree in at Computer Science Department of Taishan College (泰山学堂), Shandong University, supervised by Prof. [Xinrui Wang](https://xrsdu.github.io/xrwang.github.io/).
 
 My research interest includes graph algorithms and community search. 
 
-
-# 🔥 News
-- *2026.02*: 🎉🎉 Won a bronze medal at the ICPC Asia East Continent Final Contest!
-- *2025.11*: 🎉🎉 Won a gold medal at the ICPC Asia Shenyang Regional Contest!😄
-- *2025.11*: 🎉🎉 Won a silver medal at the ICPC Asia Nanjing Regional Contest!
-- *2025.03*: 🎉🎉 A paper has been accepted to ICDE 2025!
+# 📖 Educations
+- **Ph.D.**, Gaoling School of Artificial Intelligence, Renmin University of China, 2026 – present
+- **B.E.**, Taishan College, Shandong University, 2022 – 2026
 
 # 📝 Publications 
 
@@ -43,11 +40,12 @@ My research interest includes graph algorithms and community search.
 
 # 🏆 Honors and Awards
 - 🥇 The 2025 ACM ICPC Asia Regional Contest, Shenyang, **Gold Medal**
-- 🥉 The 50th ICPC Asia East Continent Final Contest, **Bronze Medal**
+- 🥇 The 2026 China Collegiate Programming Contest National Invitational, Qinhuangdao, **Gold Medal**
+- 🥉 The 50th ICPC Asia East Continent Final Contest (EC-Final), **Bronze Medal**
 - 🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, **Silver Medal**
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, **Bronze Medal**
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, **Bronze Medal**
-- 🎉 山东大学优秀毕业生
+- 🎉 山东大学优秀毕业生、山东大学荣誉学士、泰山学堂荣誉学院
 - 🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, **Bronze Medal**
 - 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, **Silver Medal**
 - 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
@@ -56,9 +54,7 @@ My research interest includes graph algorithms and community search.
 - 🥉 WC2021, **Bronze Medal**
 - 🥇 NOIP2020, **First Prize**
 
-# 📖 Educations
-- **Ph.D.** (Expected), Gaoling School of Artificial Intelligence, Renmin University of China, 2026 – 2031
-- **B.E.**, Taishan College, Shandong University, 2022 – 2026
+
 
 <!--# 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
