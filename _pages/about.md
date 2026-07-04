@@ -27,6 +27,9 @@ My research interest includes **Mechanism Design** and **Computational Advertisi
 - **Ph.D.**, Gaoling School of Artificial Intelligence, Renmin University of China, 2026 – present
 - **B.E.**, Taishan College, Shandong University, 2022 – 2026
 
+# 💻 Internships
+- *2026.03 - 2026.07*, [Baidu](https://github.com/), China.
+
 # 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2025</div><img src='images/icde25.png' alt="sym" width="100%"></div></div>
@@ -62,5 +65,4 @@ My research interest includes **Mechanism Design** and **Computational Advertisi
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)-->
 
-<!--# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.-->
+
