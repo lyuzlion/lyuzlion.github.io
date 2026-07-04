@@ -44,12 +44,12 @@ My research interest includes **Mechanism Design** and **Computational Advertisi
 - 🥇 The 2025 ACM ICPC Asia Regional Contest, Shenyang, <strong style="color:#DAA520; font-weight:bold;">Gold Medal</strong>
 - 🥇 The 2026 China Collegiate Programming Contest National Invitational, Qinhuangdao, <strong style="color:#DAA520; font-weight:bold;">Gold Medal</strong>
 - 🥉 The 50th ICPC Asia East Continent Final Contest (EC-Final), <strong style="color:#CD7F32; font-weight:bold;">Bronze Medal</strong>
-- 🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, <strong style="color:#C0C0C0; font-weight:bold;">Silver Medal</strong>
+- 🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, <strong style="color:#A9A9A9; font-weight:bold;">Silver Medal</strong>
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, <strong style="color:#CD7F32; font-weight:bold;">Bronze Medal</strong>
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, <strong style="color:#CD7F32; font-weight:bold;">Bronze Medal</strong>
 - 🎉 山东大学优秀毕业生、山东大学荣誉学士、泰山学堂荣誉学院
 - 🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, <strong style="color:#CD7F32; font-weight:bold;">Bronze Medal</strong>
-- 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, <strong style="color:#C0C0C0; font-weight:bold;">Silver Medal</strong>
+- 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, <strong style="color:#A9A9A9; font-weight:bold;">Silver Medal</strong>
 - 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
 - 🥇 The 15th Chinese Mathematics Competition for College Students, **First Prize**
 - 🥇 The 13th Shandong Provincial Mathematics Competition for College Students, **First Prize**
