@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD candidate at Gaoling School of Artificial Intelligence, Renmin University of China, supervised by Prof. [Qi Qi](http://ai.ruc.edu.cn/academicfaculty/szdwn/qq/index.htm).
+I am a PhD candidate at [Gaoling School of Artificial Intelligence](http://ai.ruc.edu.cn/), Renmin University of China, supervised by Prof. [Qi Qi](http://ai.ruc.edu.cn/academicfaculty/szdwn/qq/index.htm).
 
 I earned my B.E. degree in at Computer Science Department of Taishan College, Shandong University, supervised by Prof. [Xinrui Wang](https://xrsdu.github.io/xrwang.github.io/).
 
