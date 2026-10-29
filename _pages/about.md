@@ -50,7 +50,7 @@ My research interest includes **Generative Decision-Making (Generative Auto-bidd
 - 🥈 The 2025 ACM ICPC Asia Regional Contest, Nanjing, <strong style="color:#A9A9A9; font-weight:bold;">Silver Medal</strong>
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Nanjing, <strong style="color:#CD7F32; font-weight:bold;">Bronze Medal</strong>
 - 🥉 The 2023 ACM ICPC Asia Regional Contest, Jinan, <strong style="color:#CD7F32; font-weight:bold;">Bronze Medal</strong>
-- 🎉 山东大学优秀毕业生、山东大学荣誉学士、泰山学堂荣誉学院
+- 🎉 山东大学优秀毕业生、山东大学本科优秀毕业论文、山东大学荣誉学士、泰山学堂荣誉学院
 - 🥉 The 2023 ACM ICPC China Shaanxi National Invitational Programming Contest, Xi'an, <strong style="color:#CD7F32; font-weight:bold;">Bronze Medal</strong>
 - 🥈 The 2023 ACM ICPC China Shandong Provincial Programming Contest, Jinan, <strong style="color:#A9A9A9; font-weight:bold;">Silver Medal</strong>
 - 🥇 The 14th Chinese Mathematics Competition for College Students, **First Prize**
