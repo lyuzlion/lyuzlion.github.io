@@ -21,7 +21,7 @@ I am a PhD candidate at [Gaoling School of Artificial Intelligence](http://ai.ru
 
 I earned my B.E. degree in at Computer Science Department of Taishan College, Shandong University, supervised by Prof. [Xinrui Wang](https://xrsdu.github.io/xrwang.github.io/).
 
-My research interest includes **Mechanism Design** and **Computational Advertising**. 
+My research interest includes **Generative Decision-Making (Generative Auto-bidding)**. 
 
 # 📖 Educations
 - **Ph.D.**, Gaoling School of Artificial Intelligence, Renmin University of China, 2026 – present
